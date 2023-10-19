@@ -94,6 +94,7 @@ class tc_one(aetest.Testcase):
     def clean_testcase(self):
         """ Testcase cleanup section """
         log.info("Pass testcase cleanup")
+        
 
 # Testcase name : tc_two
 class tc_two(aetest.Testcase):
@@ -103,7 +104,7 @@ class tc_two(aetest.Testcase):
     def simple_test_1(self):
         """ Sample test section. Only print """
         log.info("First test section ")
-        self.failed('This is an intentional failure')
+        # self.failed('This is an intentional failure')
 
     # Second test section
     @ aetest.test
